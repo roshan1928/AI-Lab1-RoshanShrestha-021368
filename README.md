@@ -1,5 +1,3 @@
-# AI-Lab1-RoshanShrestha-021368
-
 # Vacuum Cleaner Agents 🧹
 
 This repository contains implementations of three types of intelligent agents for a vacuum cleaner environment in a 10x10 grid. The agents demonstrate different AI strategies: Simple Reflex, Goal-Based, and Utility-Based. The purpose is to simulate how each agent interacts with the environment to clean dirty cells efficiently.
