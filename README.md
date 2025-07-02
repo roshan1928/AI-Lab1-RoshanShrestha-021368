@@ -18,14 +18,14 @@ This repository contains implementations of three types of intelligent agents fo
 
 ## 1. Simple Reflex Agent
 
-### 🔍 Description:
+### Description:
 A simple reflex agent selects actions based solely on the **current percept**—i.e., whether the current cell is dirty or clean.
 
-### 🔧 Behavior:
+### Behavior:
 - If the current cell is dirty, it performs the `suck` action.
 - If the current cell is clean, it moves randomly to one of the adjacent cells.
 
-### 🧪 Simulation:
+### Simulation:
 - The agent runs for **20 steps**.
 - The **grid state is displayed after each step** to visualize the cleaning process.
 
@@ -33,15 +33,15 @@ A simple reflex agent selects actions based solely on the **current percept**—
 
 ## 2. Goal-Based Agent
 
-### 🔍 Description:
+### Description:
 This agent maintains an **internal model** of the environment to track which cells are dirty. It uses this model to make decisions that help it achieve the goal of a clean grid.
 
-### 🔧 Behavior:
+### Behavior:
 - Continuously updates its internal map of clean and dirty cells.
 - Uses a **simple search strategy** (e.g., nearest dirty cell) to decide the next move.
 - Moves toward dirty cells and cleans them.
 
-### 🧪 Simulation:
+### Simulation:
 - The agent continues **until the entire grid is clean**.
 - Displays the **sequence of actions taken** and the **final grid state**.
 
@@ -49,26 +49,26 @@ This agent maintains an **internal model** of the environment to track which cel
 
 ## 3. Utility-Based Agent
 
-### 🔍 Description:
+### Description:
 A utility-based agent chooses actions based on a **utility function** that rewards cleanliness and penalizes unnecessary movement.
 
-### ⚙️ Utility Function:
+### Utility Function:
 - `+5` for cleaning a dirty cell
 - `-1` for each movement step
 
-### 🔧 Behavior:
+### Behavior:
 - Evaluates all possible actions.
 - Selects the action that **maximizes the expected utility** at each step.
 - Keeps track of cumulative utility.
 
-### 🧪 Simulation:
+### Simulation:
 - Displays the **sequence of actions taken**.
 - Shows the **final grid state**.
 - Outputs the **total utility score** achieved.
 
 ---
 
-## 🎯 Objective
+## Objective
 
 This project demonstrates how different types of intelligent agents behave in the same environment using different decision-making strategies. It helps understand key AI concepts such as reflex actions, goal formulation, and utility optimization.
 
